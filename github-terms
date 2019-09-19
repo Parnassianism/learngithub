@@ -1,0 +1,14 @@
+This file describes the most important terms of github
+
+Branches
+- git uses branches to manage work on projects
+- the master branch is the starting point or root
+- The master branch is always deployable
+- Give branches a descriptive title
+
+Commits
+- you can make changes to branches
+- every edit to a file, creation of or deletion of a file is a commit
+- commits have to be added to a branch
+- great way to keep track of your work 
+- write meaningfull commit messages

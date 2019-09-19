@@ -5,6 +5,7 @@ Branches
 - the master branch is the starting point or root
 - The master branch is always deployable
 - Give branches a descriptive title
+- you can delete branches 
 
 Commits
 - you can make changes to branches
@@ -12,3 +13,5 @@ Commits
 - commits have to be added to a branch
 - great way to keep track of your work 
 - write meaningfull commit messages
+
+

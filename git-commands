@@ -1,0 +1,32 @@
+### general commands
+# get documentation
+git help log
+# show status
+git status
+
+### import an existing project from a tarball
+# move to project folder
+cd project
+git init
+# let git know what is all in the directory = take a snapshot
+git add .
+# this snapshot is in a temporary index, make it permanent
+git commit
+
+### make changes 
+# add files
+git add file1 file2 file3
+# check what will be committed
+git diff --cached
+# commit changes
+git commit
+
+# you can do it also in one step
+git commit -a
+
+### see history of project
+git log
+git log -p
+git log --stat --summary
+
+### use branches

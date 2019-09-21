@@ -1,2 +1,67 @@
 git
+What is version control?
 git is a version-control system to track changes in the source code
+git facilitates the work with files. Things you create, save, edit, and save again.
+version control helps with saving files again and again.
+--> it tracks history.
+--> Time, who, reason for change, content of change.
+--> who changed what when
+Great for collaboration. Multiple people work on one or connected files.
+New concept: merge = unify changes in a good way
+designed for team collaboration
+people work with overlaps (parallel) on one project
+
+What is git?
+Git is an implementation of version-control
+it works stand-alone and in a server setting
+
+
+
+
+
+Overview
+- git supports non-linear development
+- every developer has a local copy of the full development history
+- git is compareable to a filesystem
+- git consists of two data structures
+-- index: working directory, next commit
+-- object database: holds four types of objects
+- types of objects:
+-- blob: binary large object, content of a file
+-- tree: directory, contains links to objects
+-- commit: linkts tree objects together into a history, name, timestamp
+-- tag: container with a reference to another object
+- each object is identified by a SHA-1 hash 
+- git existis as a server, as a service, with a GUI
+
+
+First steps
+# create username
+git config --global user.name "Tom Devel"
+git config --global user.email "tom@mail.com"
+
+# initialise project (creates directory and control files that track history)
+git init myproject
+cd project1
+create file1.txt
+# indicate that you want to use this file for the next commit
+git add file1.txt
+# commit (makes a snapshop, record state of file in time)
+git commit -m"my first commit code"
+
+
+# multiple users
+git checkout master
+git comit -a -m"New logo"
+git push
+
+git checkout -b tomsfeature
+git comit -a -m"new code"
+git push origin tomsfeature
+
+# merge both works
+git pull
+git merge tomsfeature
+
+
+

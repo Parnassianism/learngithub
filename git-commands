@@ -13,6 +13,19 @@ git add .
 # this snapshot is in a temporary index, make it permanent
 git commit
 
+### clone a existing git project
+cd FOLDER
+git clone HTTPS_ADDRESS
+
+### background info
+# files in github can be untracked or tracked
+# github already knows tracked files. They were in the last snapshot
+# undtracked files are files that were not in the last snapshot, they are not in your staging area
+
+### see status of git folder / files
+# go to git folder
+git status
+
 ### make changes 
 # add files
 git add file1 file2 file3
